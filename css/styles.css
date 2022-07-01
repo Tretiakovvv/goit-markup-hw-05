@@ -240,6 +240,7 @@ img {
 .backdrop.is-hidden{
  opacity: 0;
  pointer-events: none;
+ visibility: hidden;
 }
 .backdrop.is-hidden .modal {
 transform: scale(1.1) translate(-50%, -50%);
@@ -262,12 +263,14 @@ transition: transform 250ms var(--transition-timing-function);
   position: absolute;
   top: 8px;
   right: 8px;
+
   display: flex;
+  padding: 0;
   align-items: center;
   justify-content: center;
   width: 30px;
   height: 30px;
-
+  
   border-radius: 50%;
  border:  1px solid rgba(0, 0, 0, 0.1);
  background-color: #ffffff;
@@ -438,14 +441,13 @@ background-color: rgba(47, 48, 58, 0.8);;
 }
   
 .network-link {
-  position: relative;
-  fill: #afb1b8;
   display: flex;
+  width: 44px;
+  height: 44px;
   list-style: none;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  fill: #afb1b8;
   border-radius: 50px;
   transition-property: fill background-color ;
   transition-duration: 250ms;
@@ -567,6 +569,8 @@ background-color: rgba(47, 48, 58, 0.8);;
   font-style: normal;
   text-decoration: none;
   line-height: 1.7;
+  transition-property: color;
+    transition-duration: 250ms;
 }
 
 .footer-link:focus,
