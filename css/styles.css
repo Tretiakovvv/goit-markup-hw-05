@@ -430,8 +430,9 @@ background-color: rgba(47, 48, 58, 0.8);;
   display: flex;
   list-style: none;
 }
-
+  
 .network-link {
+  position: relative;
   fill: #afb1b8;
   display: flex;
   list-style: none;
@@ -440,12 +441,16 @@ background-color: rgba(47, 48, 58, 0.8);;
   width: 44px;
   height: 44px;
   border-radius: 50px;
+  transition-property: fill background-color ;
+  transition-duration: 250ms;
+
 }
 
 .network-link:hover,
 .network-link:focus {
   background-color: var(--accent-color);
   fill: white;
+  
 }
 
 .network-item:not(:last-child) {
@@ -493,6 +498,8 @@ background-color: rgba(47, 48, 58, 0.8);;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+ transition-property: fill background-color;
+  transition-duration: 250ms;
 }
 
 
@@ -599,6 +606,8 @@ background-color: rgba(47, 48, 58, 0.8);;
   height: 44px;
   background-color: rgba(255, 255, 255, 10%);
   border-radius: 50px;
+  transition-property: fill background-color;
+  transition-duration: 250ms;
 }
 
 .social-link:hover,
