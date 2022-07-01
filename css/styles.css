@@ -225,6 +225,7 @@ img {
 }
 /* <бэкдроп и модальное окно */
 .backdrop{
+  z-index: 99;
   position: fixed;
   top: 0;
   left: 0;
@@ -246,6 +247,7 @@ transform: scale(1.1) translate(-50%, -50%);
 
 }
 .modal{
+ z-index: 999;
  position: absolute;
  top: 50%;
  left: 50%;
@@ -338,7 +340,6 @@ transition: transform 250ms var(--transition-timing-function);
 }
 
 .work-list>.item {
-  z-index: -1;
   flex-basis: calc(100% / 2 - 30px);
   position: relative;
 }
