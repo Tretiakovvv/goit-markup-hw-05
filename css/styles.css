@@ -115,6 +115,8 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .link:focus,
@@ -155,10 +157,13 @@ img {
   line-height: 1.1;
   text-decoration: none;
   fill: #757575;
+  transition-property: fill color;
+  transition-duration: 250ms;
 }
 
 .header-mail {
   margin-right: 10px;
+  
 }
 
 .header-phone {
