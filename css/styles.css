@@ -63,10 +63,12 @@ img {
 .nav-header {
   display: flex;
 }
+.nav-header .logo{
+  padding-top: 24px;
+}
 
 .logo {
   margin-right: 93px;
-  padding-top: 24px;
   padding-bottom: 25px;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -235,16 +237,15 @@ img {
   background-color:rgba(0, 0, 0, 0.2); 
   opacity: 1;
   transition: opacity 250ms var(--transition-timing-function);
- 
+
 }
 .backdrop.is-hidden{
  opacity: 0;
  pointer-events: none;
- visibility: hidden;
 }
 .backdrop.is-hidden .modal {
 transform: scale(1.1) translate(-50%, -50%);
-  
+
 
 }
 .modal{
@@ -257,6 +258,7 @@ transform: scale(1.1) translate(-50%, -50%);
  transform: scale(1) translate(-50%, -50%);
  background-color: #ffffff;
 transition: transform 250ms var(--transition-timing-function);
+
 }
 
 .close-button{
@@ -645,7 +647,6 @@ background-color: rgba(47, 48, 58, 0.8);;
 
 .secondary-button {
   padding: 6px 22px;
-
   border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
@@ -654,6 +655,7 @@ background-color: rgba(47, 48, 58, 0.8);;
   letter-spacing: 0.03em;
   border: none;
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .projects-buttons>.item:not(:last-child) {
@@ -718,6 +720,8 @@ background-color: rgba(47, 48, 58, 0.8);;
  opacity: 0;
  background-color: rgba(33, 150, 243, 0.9);
  transform: translateY(100%);
+ transition-duration: 250ms;
+
 }
 .card:hover .projects-overlay{
   opacity: 1;
