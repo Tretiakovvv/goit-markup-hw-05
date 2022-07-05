@@ -119,6 +119,7 @@ img {
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .link:focus,
@@ -161,6 +162,7 @@ img {
   fill: #757575;
   transition-property: fill color;
   transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .header-mail {
@@ -453,6 +455,7 @@ background-color: rgba(47, 48, 58, 0.8);;
   border-radius: 50px;
   transition-property: fill background-color ;
   transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
 
 }
 
@@ -510,6 +513,7 @@ background-color: rgba(47, 48, 58, 0.8);;
   border-radius: 4px;
  transition-property: fill background-color;
   transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
 }
 
 
@@ -573,6 +577,7 @@ background-color: rgba(47, 48, 58, 0.8);;
   line-height: 1.7;
   transition-property: color;
     transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .footer-link:focus,
@@ -620,6 +625,7 @@ background-color: rgba(47, 48, 58, 0.8);;
   border-radius: 50px;
   transition-property: fill background-color;
   transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .social-link:hover,
@@ -656,6 +662,7 @@ background-color: rgba(47, 48, 58, 0.8);;
   border: none;
   cursor: pointer;
   transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .projects-buttons>.item:not(:last-child) {
@@ -721,6 +728,7 @@ background-color: rgba(47, 48, 58, 0.8);;
  background-color: rgba(33, 150, 243, 0.9);
  transform: translateY(100%);
  transition-duration: 250ms;
+transition-timing-function: var(--transition-timing-function);
 
 }
 .card:hover .projects-overlay{
